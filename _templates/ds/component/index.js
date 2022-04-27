@@ -3,14 +3,14 @@ const propQuestions = [
   {
     type: "input",
     name: "propName",
-    message: "Enter property name",
+    message: "Enter property name, ex: age:number",
     validate(value) {
       const pass = value.match(/([a-zA-Z]*:(string|number|boolean|object))/g);
       if (pass) {
         return true;
       }
 
-      return "Please enter valid name or press ctrl+c to cancel";
+      return "Please enter valid prop name string|number|boolean|object or press ctrl+c to cancel";
     },
   },
   {

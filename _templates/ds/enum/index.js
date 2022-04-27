@@ -55,7 +55,7 @@ module.exports = {
             {
               type: "input",
               name: "enums",
-              message: `Enter enums by comma seperated string, example: primary,secondary`,
+              message: `Enter enums by comma seperated string, ex: primary,secondary`,
               validate(value) {
                 const pass = value.match(/^[A-Za-z,\-_]+$/);
                 if (pass) {
