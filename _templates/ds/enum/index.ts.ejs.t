@@ -9,3 +9,4 @@ to: <%=componentDir%>/<%=h.changeCase.param(name)%>.enum.ts
 export enum <%=enumName%> {<% enums.trim().split(/\s*,\s*/).forEach(function(enumName){ %>
   <%= h.changeCase.constant(enumName) %> = "<%=h.changeCase.param(enumName)%>",<% });%>
 }
+/**** test ****/
